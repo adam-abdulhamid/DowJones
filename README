@@ -1,0 +1,14 @@
+Simple project that uses sklearn to run some basic classifiers on this Dow Jones market data.
+
+It runs Linear Regression and SVM as the classifiers. It uses next weeks closing price as the
+label. After training (on 500 of the 700 examples), it tests on the last 200. It loops through
+them and predicts on those, and only if we predict an increase in the price (that is next weeks
+close is higher than this weeks close), we count it as a "buy" and will add it to our money
+spent, and we add the next weeks close price to the money we have at the end.
+
+Very simple example, just wanted to take a quick look at sklearn and some of the classifiers.
+
+USAGE:
+
+Just clone the repo, and run python naive.py and you will get a printout of the "profits" for
+the Linear Regression model and the SVM model. 

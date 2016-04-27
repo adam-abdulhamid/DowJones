@@ -54,9 +54,7 @@ if __name__ == "__main__":
 	testingX = X[500:]
 	testingY = Y[500:]	
 
-	classifiers = [linear_model.LinearRegression(), \
-		linear_model.LinearRegression(normalize=True),\
-		svm.LinearSVR()]	
+	classifiers = [linear_model.LinearRegression(), svm.LinearSVR()]	
 
 	for index, clf in enumerate(classifiers):
 		moneySpent = 0
